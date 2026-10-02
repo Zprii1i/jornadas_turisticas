@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="header.css">
+
+<header class="site-header">
+    <div class="header-container">
+        <a class="brand" href="index.html" aria-label="Lago Blanco - inicio">
+            <span class="brand-mark" aria-hidden="true">✦</span>
+            <span class="brand-text">
+                <strong>Lago Blanco</strong>
+                <small>Chubut, Patagonia</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegación principal">
+            <a href="index.html" class="active">Inicio</a>
+            <a href="localidad.html">La localidad</a>
+            <a href="actividades.html">Qué hacer</a>
+            <a href="turismo.html">Turismo</a>
+            <a href="informacion.html">Información útil</a>
+            <button class="search-button" type="button" aria-label="Buscar">⌕</button>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navigation = document.querySelector('.main-navigation');
+
+    if (menuToggle && navigation) {
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navigation.classList.toggle('is-open');
+            menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
+</script>
