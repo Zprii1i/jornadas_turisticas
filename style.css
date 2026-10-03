@@ -178,22 +178,17 @@ a { color: var(--c-accent); }
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     color: var(--c-ink);
     text-decoration: none;
     white-space: nowrap;
 }
 
-.brand-mark {
-    display: grid;
-    place-items: center;
-    width: 36px;
-    height: 36px;
-    border: 1px solid #ef6b5b;
+.brand-logo {
+    width: 120px;
+    object-fit: contain;
     border-radius: 50%;
-    color: #ef6b5b;
-    font-size: 20px;
-    transform: rotate(15deg);
+    flex-shrink: 0;
 }
 
 .brand-text {
@@ -237,12 +232,14 @@ a { color: var(--c-accent); }
 .main-navigation a::after {
     content: '';
     position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -9px;
-    height: 2px;
-    background: #ef6b5b;
-    transform: scaleX(0);
+    left: 4px;
+    right: 4px;
+    bottom: 2px;
+    height: 9px;
+    background: rgba(239, 107, 91, 0.35);
+    border-radius: 999¡px;
+    z-index: -1;
+    transform: rotate(-1.5deg) scaleX(0);
     transform-origin: center;
     transition: transform 180ms ease;
 }
@@ -252,7 +249,7 @@ a { color: var(--c-accent); }
 .search-button:hover { color: #ef6b5b; }
 
 .main-navigation a:hover::after,
-.main-navigation a.active::after { transform: scaleX(1); }
+.main-navigation a.active::after { transform: rotate(-1.5deg) scaleX(1); }
 
 .search-button {
     padding: 0;
@@ -448,10 +445,10 @@ main.page-content {
     }
 
     .main-navigation a::after {
-        right: auto;
         left: 10px;
-        bottom: 6px;
-        width: 24px;
+        right: 10px;
+        bottom: 8px;
+        width: auto;
     }
 }
 
