@@ -1,0 +1,248 @@
+main {
+    font-family: Arial, sans-serif;
+    color: #263d52;
+    background-color: #f8f5ee;
+}
+
+#inicio {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#inicio > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#inicio > div {
+    position: absolute;
+    top: 90px;
+    left: 8%;
+    color: white;
+}
+
+#inicio h2 {
+    font-size: 70px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+
+#inicio p {
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+#localidad {
+    display: flex;
+    gap: 40px;
+    padding: 60px 7%;
+    background-color: #f8f5ee;
+    align-items: center;
+}
+
+#localidad > div {
+    flex: 1;
+}
+
+#localidad h2 {
+    font-size: 35px;
+    color: #284c69;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #7ba8c9;
+    display: inline-block;
+}
+
+#localidad p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #34495e;
+}
+
+#localidad > div:nth-child(2) {
+    background-color: #e6edf2;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+#localidad > div:nth-child(2) h3 {
+    font-size: 25px;
+    color: #284c69;
+}
+
+#localidad ul {
+    padding: 0;
+    list-style: none;
+}
+
+#localidad li {
+    margin: 18px 0;
+    font-size: 17px;
+    color: #34495e;
+}
+
+#localidad strong {
+    color: #284c69;
+}
+
+#localidad figure {
+    background-color: white;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transform: rotate(2deg);
+}
+
+#localidad figure img {
+    width: 100%;
+    display: block;
+}
+
+#localidad figcaption {
+    padding: 15px 5px 5px;
+    font-size: 18px;
+    font-style: italic;
+    color: #34495e;
+}
+
+#actividades {
+    padding: 55px 5%;
+    background-color: #e9f1f6;
+}
+
+#actividades > h2 {
+    font-size: 38px;
+    color: #284c69;
+    margin-bottom: 35px;
+    border-bottom: 3px solid #7ba8c9;
+    display: inline-block;
+}
+
+#actividades > div {
+    display: flex;
+    gap: 25px;
+}
+
+#actividades article {
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+#actividades article img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+#actividades article h3 {
+    font-size: 18px;
+    color: #284c69;
+    margin: 15px 18px 8px;
+}
+
+#actividades article p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 18px 20px;
+    color: #526575;
+}
+
+#informacion {
+    display: flex;
+    gap: 40px;
+    padding: 55px 7%;
+    background-color: #dceaf3;
+    align-items: center;
+}
+
+#informacion > div {
+    flex: 1;
+}
+
+#informacion h2 {
+    color: #315f82;
+    font-size: 28px;
+}
+
+#informacion p {
+    color: #40596c;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#informacion img {
+    width: 100%;
+    max-width: 300px;
+}
+
+#turismo {
+    padding: 60px 8%;
+    background-color: #f8f5ee;
+    text-align: center;
+}
+
+#turismo h2 {
+    color: #284c69;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+#turismo p {
+    font-size: 18px;
+    color: #526575;
+}
+
+#turismo ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#turismo li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#turismo a {
+    color: #315f82;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+
+    #inicio {
+        height: 400px;
+    }
+
+    #inicio h2 {
+        font-size: 45px;
+    }
+
+    #inicio p {
+        font-size: 18px;
+    }
+
+    #localidad {
+        flex-direction: column;
+    }
+
+    #actividades > div {
+        flex-direction: column;
+    }
+
+    #informacion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #turismo li {
+        display: block;
+        margin: 15px;
+    }
+}
