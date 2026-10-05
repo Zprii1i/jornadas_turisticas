@@ -36,7 +36,7 @@ body {
     min-width: 320px;
     color: var(--ink);
     background: var(--bg);
-    font-family: 'Allura', cursive;
+    font-family: cursive;
     line-height: 1.5;
     overflow-x: hidden;
 }
