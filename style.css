@@ -38,6 +38,7 @@ body {
     background: var(--bg);
     font-family: 'Allura', cursive;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 button,
@@ -63,8 +64,11 @@ a:hover {
 }
 
 .container {
-    width: var(--content-w);
+    display: flex;
     margin: 0 auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-direction: column;
 }
 
 .section {
@@ -79,8 +83,11 @@ a:hover {
 
 .split-layout,
 .cards-grid {
+    flex-direction: row;
     display: flex;
     gap: var(--s-4);
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 .split-layout {
@@ -123,10 +130,13 @@ a:hover {
     color: var(--ink-strong);
 }
 
-.section-title--underlined {
+.section-title--underlined,
+.section-title--shortline {
     display: inline-block;
-    border-bottom: 3px solid #7ba8c9;
+    width: max-content;
+    max-width: 100%;
     padding-bottom: 6px;
+    border-bottom: 3px solid #7ba8c9;
 }
 
 /* Header: mínimo y compatible con el sistema actual */
@@ -140,10 +150,13 @@ a:hover {
 
 .site-header .container {
     min-height: 72px;
+    flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: var(--s-3);
+    margin-left: 2%;
+    margin-right: 2%
 }
 
 .brand {
@@ -182,18 +195,37 @@ a:hover {
 .main-navigation {
     display: flex;
     align-items: center;
-    gap: var(--s-3);
+    gap: var(--s-4);
 }
 
 .main-navigation a {
-    color: var(--ink);
+    position: static;
+    z-index: 1;
+    display: inline-block;
+    padding: 6px 10px;
+    color:rgb(3, 34, 91);
     font-weight: 600;
+    text-decoration: none;
 }
 
 .main-navigation a.active,
 .main-navigation a:hover,
 .search-button:hover {
-    color: var(--accent);
+
+    left: 8px;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+
+    background-color: rgb(102, 206, 247);
+    transform: rotate(-5deg);
+
+    clip-path: polygon(
+        12% 10%, 88% 10%,
+        98% 18%, 93% 30%, 99% 44%, 93% 58%, 98% 72%, 89% 88%,
+        11% 88%,
+        2% 72%, 7% 58%, 1% 44%, 7% 30%, 2% 18%
+    );
 }
 
 .search-button,
@@ -295,6 +327,12 @@ a:hover {
 .tourism {
     background: var(--bg);
     text-align: center;
+}
+
+.locality__text,
+.locality__info,
+.info-strip .split-layout > div {
+    text-align: left;
 }
 
 .locality__text p,
