@@ -15,7 +15,7 @@
     <main>
         <!-- PORTADA / HERO -->
         <section id="inicio" class="hero">
-            <img class="hero__image" src="paisaje_lago_blanco.jpg" alt="Paisaje de Lago Blanco">
+            <img class="hero__image" src="img/paisaje_lago_blanco.png" alt="Paisaje de Lago Blanco">
 
             <div class="hero__content">
                 <h1 class="hero__title text-display">Lago Blanco</h1>
@@ -28,25 +28,60 @@
         <section id="localidad" class="section locality">
             <div class="container split-layout">
                 <div class="locality__text">
-                    <h2 class="section-title section-title--underlined">La localidad</h2>
-                    <p>Lago Blanco es una pequeña localidad y comuna rural del sudoeste de la provincia del Chubut, en el departamento Río Senguer.</p>
-                    <p>Se encuentra en un entorno patagónico de gran belleza natural, próxima al límite con Santa Cruz y al corredor internacional que comunica la Argentina con Chile por el Paso Huemules.</p>
-                    <p>Un lugar chico, con mucha naturaleza.</p>
+                    <div class="title-header">
+                        <img src="img/localidad.png" class="title-icon">
+                        <h2 class="section-title section-title--underlined">La localidad</h2>
+                    </div>
+                    <div class="parraphs">
+                        <p>Lago Blanco es una localidad de la provincia del Chubut, Argentina, ubicada en el sudoeste de la provincia, en el departamento Río Senguer.</p>
+                        <p>Se encuentra en un entorno patagónico de gran belleza natural, próxima al límite con Santa Cruz y al corredor internacional que comunica la Argentina con Chile por el Paso Huemules.</p>
+                    </div>
+                    <img src="img/eslogan.png" alt="Un lugar chico, con mucha naturaleza" class="locality__slogan" loading="lazy">
                 </div>
 
                 <div class="locality__info panel">
                     <h3>Información</h3>
                     <ul class="list-clean">
-                        <li><strong>Provincia:</strong> Chubut</li>
-                        <li><strong>Departamento:</strong> Río Senguer</li>
-                        <li><strong>Población:</strong> Aprox. 300 habitantes</li>
-                        <li><strong>Altitud:</strong> 285 m s. n. m.</li>
-                        <li><strong>Distancia:</strong> A 120 km de Gobernador Costa</li>
+                        <div class="info-item">
+                            <img src="img/ubicacion.png" alt="Icono de ubicación" class="info-icon">
+                            <div class="item-text">
+                                <li><strong>Provincia:</strong></li>
+                                <li>Chubut</li>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="img/departamento.png" alt="Icono de departamento" class="info-icon">
+                            <div class="item-text">
+                                <li><strong>Departamento:</strong></li>
+                                <li>Río Senguer</li>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="img/poblacion.png" alt="Icono de población" class="info-icon">
+                            <div class="item-text">
+                                <li><strong>Población:</strong></li>
+                                <li>Aprox. 300 habitantes</li>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="img/altitud.png" alt="Icono de altitud" class="info-icon">
+                            <div class="item-text">
+                                <li><strong>Altitud:</strong></li>
+                                <li>285 m s. n. m.</li>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="img/distancia.png" alt="Icono de distancia" class="info-icon">
+                            <div class="item-text">
+                                <li><strong>Distancia:</strong></li>
+                                <li>A 120 km de Gobernador Costa</li>
+                            </div>
+                        </div>
                     </ul>
                 </div>
 
                 <figure class="locality__photo">
-                    <img src="img/lago-blanco.jpg" alt="Vista del Lago Blanco" loading="lazy">
+                    <img src="img/lago-blanco.png" alt="Vista del Lago Blanco" loading="lazy">
                     <figcaption>El lago, siempre presente ♡</figcaption>
                 </figure>
             </div>
@@ -55,27 +90,42 @@
         <!-- ACTIVIDADES -->
         <section id="actividades" class="section activities">
             <div class="container">
-                <h2 class="section-title section-title--shortline">Qué hacer</h2>
+                <div class="title-header">
+                    <img src="img/estrella.png" class="title-icon">
+                    <h2 class="section-title section-title--underlined">Qué hacer</h2>
+                </div>
 
                 <div class="cards-grid">
-                    <article class="card activity-card">
-                        <img src="img/paisajes.jpg" alt="Paisaje de Lago Blanco" loading="lazy">
-                        <h3>📷 Paisajes y fotografía</h3>
+                    <article class="activity-card">
+                        <img src="img/paisajes-img.png" alt="Paisaje de Lago Blanco" class="activity-img">
+                        <div class="card activity-title">
+                            <img src="img/camara.png" alt="Icono de paisajes y fotografía" class="activity-icon">
+                            <h3>Paisajes y fotografía</h3>
+                        </div>
                     </article>
 
-                    <article class="card activity-card">
-                        <img src="img/senderismo.jpg" alt="Senderismo en Lago Blanco" loading="lazy">
-                        <h3>🥾 Senderismo y naturaleza</h3>
+                    <article class="activity-card">
+                        <img src="img/senderismo-img.png" alt="senderismo y naturaleza" class="activity-img">
+                        <div class="card activity-title">
+                            <img src="img/senderismo.png" alt="Icono de senderismo" class="activity-icon">
+                            <h3>Senderismo y naturaleza</h3>
+                        </div>
                     </article>
 
-                    <article class="card activity-card">
-                        <img src="img/pesca.jpg" alt="Pesca deportiva" loading="lazy">
-                        <h3>🐟 Pesca deportiva</h3>
+                    <article class="activity-card">
+                        <img src="img/pesca-img.png" alt="Pesca deportiva" class="activity-img">
+                        <div class="card activity-title">
+                            <img src="img/pesca.png" alt="Icono de pesca" class="activity-icon">
+                            <h3>Pesca deportiva</h3>
+                        </div>
                     </article>
 
-                    <article class="card activity-card">
-                        <img src="img/cielo-nocturno.jpg" alt="Cielo nocturno" loading="lazy">
-                        <h3>☆ Cielo nocturno</h3>
+                    <article class="activity-card">
+                        <img src="img/cielo-nocturno.png" alt="Cielo nocturno" class="activity-img">
+                        <div class="card activity-title">
+                            <img src="img/estrella.png" alt="Icono de astronomía" class="activity-icon">
+                            <h3>Cielo nocturno</h3>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -84,10 +134,14 @@
         <!-- CLIMA / INFORMACIÓN -->
         <section id="informacion" class="section info-strip">
             <div class="container split-layout">
-                <div>
-                    <h2 class="section-title">☁ Clima</h2>
-                    <p>Frío y ventoso, con grandes variaciones de temperatura.</p>
-                    <p>Ideal para disfrutar de la naturaleza en cualquier época del año.</p>
+                <div class="info-card">
+                    <div class="title-header">
+                        <img src="img/clima.png" alt="Icono de clima" class="info-icon">
+                        <h2 class="section-title section-title--underlined">Clima</h2>
+                    </div>
+                    <p>Frío y ventoso, con grandes variaciones de temperatura.
+                        Ideal para disfrutar de la naturaleza en cualquier época del año.
+                    </p>
                 </div>
 
                 <div>
@@ -96,9 +150,9 @@
                 </div>
 
                 <div>
-                    <h2 class="section-title">📍 Ubicación</h2>
-                    <p>Lago Blanco</p>
-                    <p>Chubut, Argentina</p>
+                    <h2 class="section-title sect!ion-title--underlined">Ubicación</h2>
+                    <p>Lago Blanco.<br>
+                        Chubut, Argentina</p>
                     <img src="img/mapa.png" alt="Mapa de ubicación de Lago Blanco" loading="lazy">
                 </div>
             </div>

@@ -71,6 +71,7 @@ a:hover {
     flex-direction: column;
 }
 
+
 .section {
     padding: 44px 0;
 }
@@ -108,6 +109,8 @@ a:hover {
 .card {
     background: #fff;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    justify-content: center;
+
 }
 
 .panel {
@@ -335,6 +338,39 @@ a:hover {
     text-align: left;
 }
 
+.title-header {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+
+.title-icon {
+    width: 85px;
+    margin: 10px;
+}
+
+.parraphs{
+    margin-left: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.item-text{
+    line-height: 0.5;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info-icon {
+    width: 35px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
 .locality__text p,
 .info-strip p,
 .tourism p {
@@ -373,13 +409,26 @@ a:hover {
 }
 
 .activity-card {
-    overflow: hidden;
+    align-items: center ;
+    width: 100%;
+    height: 200px;
 }
 
-.activity-card img {
-    width: 100%;
-    height: 150px;
+.activity-img {
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
+}
+
+.activity-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.activity-icon {
+    width: 35px;
 }
 
 .activity-card h3 {
@@ -391,14 +440,16 @@ a:hover {
     color: var(--accent);
 }
 
-.info-strip img {
-    width: 100%;
-    max-width: 300px;
-}
+
 
 .tourism .list-clean li {
     display: inline-block;
     margin: 0 var(--s-2);
+}
+
+.info-card {
+    align-items: center;
+    flex-direction: row;
 }
 
 #inicio::after {
