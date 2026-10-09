@@ -92,14 +92,16 @@ a:hover {
 }
 
 .split-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    gap: var(--s-4);
 }
 
 .split-layout > *,
 .cards-grid > * {
-    flex: 1;
+    min-width: 0;
 }
-
 .card,
 .panel,
 .locality__photo {
@@ -349,8 +351,14 @@ a:hover {
     margin: 10px;
 }
 
-.parraphs{
+.parraph-a{
     margin-left: 40px;
+}
+
+.parraph-b {
+    margin-left: 100px;
+    width: 300px;
+    font-size: large;
 }
 
 .info-item {
@@ -448,9 +456,13 @@ a:hover {
 }
 
 .info-card {
+    position: relative;
+    width: 300px;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: -100px;
 }
 
 .title-header {
@@ -459,9 +471,9 @@ a:hover {
 }
 
 .info-card p {
-    margin-left: 80px;
     margin-top: 0;
 }
+
 
 #inicio::after {
     content: "";
@@ -560,4 +572,31 @@ a:hover {
 .site-footer .brand-text,
 .site-footer .brand-text strong {
     color: #ffffff !important;
+}
+
+.index-img {
+    max-width: 300px;
+    height: auto;
+}
+
+.index-img-text {
+    height: 150px;
+    width: auto;
+}
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title-climate {
+    margin-left: 100px;
+}
+
+.climate-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
