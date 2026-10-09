@@ -213,7 +213,7 @@ a:hover {
 
 .main-navigation a.active,
 .main-navigation a:hover,
-.search-button:hover {
+.header-button:hover {
 
     left: 8px;
     right: 8px;
