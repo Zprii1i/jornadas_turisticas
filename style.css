@@ -520,3 +520,33 @@ a:hover {
         padding: 34px 0;
     }
 }
+
+.site-footer {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: #2a4568;
+    border-bottom: 1px solid #d1d9df;
+}
+
+.site-footer .container {
+    min-height: 72px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--s-3);
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+.site-footer .main-navigation a,
+.site-footer .main-navigation a:visited,
+.site-footer .main-navigation a:link {
+    color: #ffffff !important;
+}
+
+.site-footer .brand-text,
+.site-footer .brand-text strong {
+    color: #ffffff !important;
+}
